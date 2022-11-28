@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+<!--
     <VideoView
         android:id="@+id/videoView"
         android:layout_width="343dp"
@@ -16,7 +16,46 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+-->
 
+    <ImageView
+        android:id="@+id/botonPausa"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="120dp"
+        android:clickable="true"
+        android:onClick="pausarMusica"
+        android:src="@drawable/pausa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/botonParar"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="120dp"
+        android:clickable="true"
+        android:onClick="pararMusica"
+        android:src="@drawable/parar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/botonInicio"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="120dp"
+        android:clickable="true"
+        android:onClick="iniciarMusica"
+        android:src="@drawable/play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
